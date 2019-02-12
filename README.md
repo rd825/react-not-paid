@@ -14,18 +14,19 @@ The first paramater is `dueDate`, which is any common date encoding (e.g. MM-DD-
 
 The second parameter is `gracePeriod`, which is the number of days it will take your client's site to fully disappear; this is an Integer value. <br/>
 
-**NOTE: this may exhibit differing behavior across timezones, as it does not yet account for UTC offsets. This functionality is forthcoming.**
+_NOTE: this may exhibit differing behavior across timezones, as it does not yet account for UTC offsets. This functionality is forthcoming._
 
 #### Example Usage
 
+###### notPaid(dueDate, gracePeriod)
+
 ```
   componentDidMount = () => {
-    // notPaid(dueDate, gracePeriod)
     notPaid("2019-02-14", 14);
   };
 ```
 
 ### Author
 
-Created by Rahul Desai (@rd825 on Github, [rdesai01](https://twitter.com/RDesai01) on Twitter) <br/>
+Created by Rahul Desai ([@rd825](https://github.com/rd825) on Github, [@RDesai01](https://twitter.com/RDesai01) on Twitter) <br/>
 Inspired by Ciprian's [vanilla JS version](https://github.com/kleampa/not-paid) <br/>
