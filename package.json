@@ -1,4 +1,14 @@
 {
+  "name": "react-not-paid",
+  "version": "1.0.0",
+  "description": "A React utility for freelancers whose clients aren't paying.",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/rd825/react-not-paid",
+    "type": "git"
+  },
+  "author": "Rahul Desai",
+  "license": "MIT",
   "dependencies": {
     "moment": "^2.24.0"
   }

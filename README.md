@@ -29,4 +29,4 @@ _NOTE: this may exhibit differing behavior across timezones, as it does not yet 
 ### Author
 
 Created by Rahul Desai ([@rd825](https://github.com/rd825) on Github, [@RDesai01](https://twitter.com/RDesai01) on Twitter) <br/>
-Inspired by Ciprian's [vanilla JS version](https://github.com/kleampa/not-paid) <br/>
+Inspired by Dragoi Ciprian's [vanilla JS version](https://github.com/kleampa/not-paid) <br/>
