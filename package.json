@@ -9,6 +9,13 @@
   },
   "author": "Rahul Desai",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "freelance",
+    "not paid",
+    "notpaid"
+  ],
   "dependencies": {
     "moment": "^2.24.0"
   }
