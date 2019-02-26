@@ -2,7 +2,7 @@
 
 ### Having trouble with your clients not paying for your work? React-Not-Paid will get you sorted!
 
-This React utility will add opacity to a site's body tag and decrease it every day until the site completely fades away. Set a due date and customize the grace period you offer until the client's website fully disappears.
+This React utility will add opacity to a site's body tag and decrease it every day until the site completely fades away. Set a due date and customize the grace period you offer until the client's website fully disappears. It should now work reliably across time-zones, because it converts all dates to UTC and makes calculations thereafter.
 
 ### Usage Instructions
 
@@ -10,11 +10,9 @@ Import this package by putting `import notPaid from "react-not-paid"` in your Ap
 
 Then, in your App.js's `componentDidMount` lifecycle method, call the notPaid function. <br/>
 
-The first paramater is `dueDate`, which is any common date encoding (e.g. MM-DD-YYYY, YYYY-MM-DD) as a String. <br/>
+The first paramater is `dueDate`, which is an ISO date encoding (i.e. "YYYY-MM-DD") as a String. <br/>
 
-The second parameter is `gracePeriod`, which is the number of days it will take your client's site to fully disappear; this is an Integer value. <br/>
-
-_NOTE: this may exhibit differing behavior across timezones, as it does not yet account for UTC offsets. This functionality is forthcoming._
+The second parameter is `gracePeriod`, which is the number of days (e.g. 7, 14) it will take your client's site to fully disappear; this is an Integer value. <br/>
 
 #### Example Usage
 
@@ -22,7 +20,7 @@ _NOTE: this may exhibit differing behavior across timezones, as it does not yet 
 
 ```
   componentDidMount = () => {
-    notPaid("2019-02-14", 14);
+    notPaid("2019-02-26", 14);
   };
 ```
 

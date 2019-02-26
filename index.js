@@ -2,10 +2,10 @@ import moment from "moment";
 
 export default function notPaid(dueDate, gracePeriod) {
   // Giving the provided date to Moment, a wrapper for Date objects
-  let due = moment(dueDate);
+  let due = moment.utc(dueDate);
 
   // Finding the diff between now and the due date in "days"
-  let dueDiff = moment().diff(due, "days");
+  let dueDiff = moment.utc().diff(due, "days");
 
   // If the diff is positive (i.e. past due), start this code block.
   if (dueDiff > 0) {
